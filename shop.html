@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Online Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    
+    <header class="header"> 
+        <div class="container"> 
+            <div class="header__container"> 
+                <ul class="header__list"> 
+                    <li class="header__item"> 
+                        <a href="" class="header__link">Shop</a> 
+                    </li> 
+                    <li class="header__item"> 
+                        <a href="./index.html" class="header__link">About Us</a> 
+                    </li> 
+                    <li class="header__item"> 
+                        <a href="" class="header__link">Contacts</a> 
+                    </li> 
+                </ul> 
+ 
+                <div class="header__logo"> 
+                    <a href="./index.html" class="header__logo-link"> 
+                        <img src="./img/logo.jpg" alt="" class="header__logo-img" width="40px"> 
+                        <p class="header__logo-text">Homemade<br> Chocolate</p> 
+                    </a> 
+                </div> 
+                <ul class="header__list"> 
+                    <li class="header__item"> 
+                        <a href="" class="header__link"> 
+                            <img src="./img/person.svg" alt="" class="header__link-svg"> 
+                        </a> 
+                    </li> 
+                    <li class="header__item"> 
+                        <a href="" class="header__link"> 
+                            <img src="./img/heart.svg" alt="" class="header__link-svg"> 
+                        </a> 
+                    </li> 
+                    <li class="header__item"> 
+                        <a href="./shopping_list.html" class="header__link"> 
+                            <img src="./img/bag.svg" alt="" class="header__link-svg"> 
+                        </a> 
+                    </li> 
+                </ul>                 
+                <div class="burger-menu"> 
+                    <div class="burger-icon" onclick="toggleMenu()"> 
+                        <div class="bar"></div> 
+                        <div class="bar"></div> 
+                        <div class="bar"></div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </header>
+
+
+    <br>
+
+    <div class="loading-overlay">
+        <span class="img-text">Wait a Little Bit Please!</span>
+        <img src="img/picmix.com_1613194.gif" alt="Loading...">
+    </div>
+    <main>
+        <div class="chocolate-cards">
+            <div class="chocolate-card">
+                <div class="chocolate-card-header">
+                    <h3 class="name">Neptune wih Blueberries</h3>
+                </div>
+                <div class="chocloate-card-body">
+                    <img src="./img/choco1.jpg" alt="">
+                    <ul>
+                        <li class="description">milk chocolate filled with butter cream and blueberries</li>
+                        <li class="price">4.00 $</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="chocolate-card-footer">
+                    <button href=class="buy">Buy</button>
+                    <button href="#" class="cart">Add to cart</button>
+                </div>
+                
+            </div>
+            <div class="chocolate-card">
+                <div class="chocolate-card-header">
+                    <h3 class="name">Mother Earth</h3>
+                </div>
+                <div class="chocloate-card-body">
+                    <img src="./img/choco2.jpg" alt="">
+                    <ul>
+                        <li class="description">dark chocolate with japaneese green matcha</li>
+                        <li class="price">2.00 $</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="chocolate-card-footer">
+                    <button>Buy</button>
+                </div>
+            </div>
+            <div class="chocolate-card">
+                <div class="chocolate-card-header">
+                    <h3 class="name">Sea of Tranquility</h3>
+                </div>
+                <div class="chocloate-card-body">
+                    <img src="./img/choco3.jpg" alt="">
+                    <ul>
+                        <li class="description">milk chocolate with japaneese blue and green matcha filled with gold </li>
+                        <li class="price">5.00 $</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="chocolate-card-footer">
+                    <button>Buy</button>
+                </div>
+            </div>
+            <div class="chocolate-card">
+                <div class="chocolate-card-header">
+                    <h3 class="name">Crocus Beauty</h3>
+                </div>
+                <div class="chocloate-card-body">
+                    <img src="./img/choco4.jpg" alt="">
+                    <ul>
+                        <li class="description">truffle chocolate filled with blue mint cream</li>
+                        <li class="price">6.00 $</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="chocolate-card-footer">
+                    <button>Buy</button>
+                </div>
+            </div>
+            <div class="chocolate-card">
+                <div class="chocolate-card-header">
+                    <h3 class="name">Venus Love</h3>
+                </div>
+                <div class="chocloate-card-body">
+                    <img src="./img/choco5.jpg" alt="">
+                    <ul>
+                        <li class="description">dark choclate filled with strawberries and cream cheese</li>
+                        <li class="price">4.00 $</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="chocolate-card-footer">
+                    <button>Buy</button>
+                </div>
+            </div>
+            <div class="chocolate-card">
+                <div class="chocolate-card-header">
+                    <h3 class="name">Live Nature</h3>
+                </div>
+                <div class="chocloate-card-body">
+                    <img src="./img/choco6.jpg" alt="">
+                    <ul>
+                        <li class="description">dark chocolate filled with powder of italian basil and mint leaves</li>
+                        <li class="price">3.00 $</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="chocolate-card-footer">
+                    <button>Buy</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+   <footer class="footer"> 
+        <div class="container"> 
+            <div class="footer__container"> 
+                <div class="footer__block"> 
+                    <div class="footer__logo"> 
+                        <a href="./index.html" class="footer__logo-link"> 
+                            <img src="./img/logo.jpg" alt="" class="footer__logo-img" width="40px"> 
+                            <p class="footer__logo-text">Homemade<br> Chocolate</p> 
+                        </a> 
+                    </div> 
+                </div> 
+                <div class="footer__block"> 
+                    <p class="footer__block-header">BOUTIQUE LUCERNE</p> 
+                    <p class="footer__contact">Hertensteinstrasse 7<br>6004 Lucerne<br>Switzerland</p> 
+                    <p class="footer__block-header">OPENING HOURS</p> 
+                    <div class="footer__block-grid"> 
+                        <p class="opening__hours">Monday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Tuesday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Wednesday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Thursday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Friday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Saturday</p> 
+                        <p class="opening__hours">09.00 – 17.00<br></p> 
+                        <p class="opening__hours">Sunday</p> 
+                        <p class="opening__hours">closed<br></p> 
+                    </div> 
+                    <a href="#!" class="footer__link">More about Boutique Lucerne</a> 
+                </div> 
+ 
+                <div class="footer__block"> 
+                    <p class="footer__block-header">BOUTIQUE ZURICH</p> 
+                    <p class="footer__contact">Schlüsselgasse 12<br>8001 Zurich<br>Switzerland</p> 
+                    <p class="footer__block-header">OPENING HOURS</p> 
+                    <div class="footer__block-grid"> 
+                        <p class="opening__hours">Monday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Tuesday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Wednesday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Thursday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Friday</p> 
+                        <p class="opening__hours">10.00 – 18.30<br></p> 
+                        <p  class="opening__hours">Saturday</p> 
+                        <p class="opening__hours">09.00 – 17.00<br></p> 
+                        <p class="opening__hours">Sunday</p> 
+                        <p class="opening__hours">closed<br></p> 
+                    </div> 
+                    <a href="#!" class="footer__link">More about Boutique Zurich</a> 
+                </div> 
+                <div class="footer__block footer__block-last"> 
+                    <p class="footer__block-header">FOLLOW US</p> 
+                    <ul class="footer__list"> 
+                        <li class="footer__item"> 
+                            <a href="" class="footer__link"> 
+                                <img src="./img/facebook.svg" alt="" class="header__link-svg"> 
+                            </a> 
+                        </li> 
+                        <li class="header__item"> 
+                            <a href="" class="footer__link"> 
+                                <img src="./img/instagram.svg" alt="" class="header__link-svg"></a> 
+                            </li> 
+                            <li class="header__item"> 
+                                <a href="" class="footer__link"> 
+                                    <img src="./img/twitter.svg" alt="" class="header__link-svg"> 
+                                </a> 
+                            </li> 
+                        </ul> 
+                        <p class="footer__contact">Obergrundstrasse 42<br>6003 Lucerne<br> 
+                            <a href="tel:+41414187090" class="footer__link">+41 (0) 41 418 70 90<br></a> 
+                            <a href="mailto:info@maxchocolatier.com" class="footer__link">info@maxchocolatier.com</a></p> 
+                    </div> 
+                     
+                </div> 
+            </div> 
+        </footer>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
